@@ -16,7 +16,7 @@ RSpec.describe 'Machine show page', type: :feature do
         # # As a visitor
         # # When I visit a vending machine show page
         visit machine_path(@machine1)
-        # save_and_open_page
+        save_and_open_page
         
         # # I see the name of all of the snacks associated with that vending machine along with their price
         expect(page).to have_content(@snack1.name)
